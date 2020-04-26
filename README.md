@@ -1,1 +1,3 @@
-# C-
+# C++
+
+# simple C++ codes
