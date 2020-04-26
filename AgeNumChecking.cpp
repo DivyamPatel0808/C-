@@ -24,14 +24,33 @@ int main() {
 // moblie : 9104208088 valid : yes
 // Date-time: 27/04/2020 - 01:22
 */
- 
-string firstName = "Divyam";
-string lastName = "Patel";
-int Age = 18;
+
+string firstName; 
+cout << "Type a First Name: "; // Type a number and press enter
+cin >> firstName; // Get user input from the keyboard
+
+string lastName; 
+cout << "Type a Last Name: "; // Type a number and press enter
+cin >> lastName; // Get user input from the keyboard
+
+int Age; 
+cout << "Type a Age: "; // Type a number and press enter
+cin >> Age; // Get user input from the keyboard
+
 string Goal;
-string add = "54, pramukh";
-int pinCode = 382421;
-string mobile = "9104208088";
+
+string add; 
+cout << "Type an Address: "; // Type a number and press enter
+cin >> add; // Get user input from the keyboard
+
+int pinCode; 
+cout << "Type a PinCode: "; // Type a number and press enter
+cin >> pinCode; // Get user input from the keyboard
+
+string mobile; 
+cout << "Type a Mobile Number: "; // Type a number and press enter
+cin >> mobile; // Get user input from the keyboard
+
 string valid;
 
 if (Age <= 10) {
@@ -71,7 +90,9 @@ else {
     // Using localtime() 
     ti = localtime(&tt); 
 
-
+cout << "" << endl;
+cout << "----------------------Summary---------------------" << endl;
+cout << "" << endl;
 cout << "First : " << firstName << " and Last : " << lastName << "\n";
 cout << "Age : " << Age << " Goal : " << Goal << "\n";
 cout << "Address : " << add << " PinCode : " << pinCode << "\n";
